@@ -21,10 +21,8 @@ namespace github0303
                 name = value;
 
                 OnPropertyChanged(nameof(Name));
-                OnPropertyChanged(nameof(DisplayName));
             }
         }
-        public string DisplayName => $"Name Entered: {Name}";
 
         public event PropertyChangedEventHandler PropertyChanged;
 

@@ -17,6 +17,7 @@ namespace github0303
         {
             InitializeComponent();
             BindingContext = new MainViewModel();
+            BindingContext = new MainViewModel2_0();
         }
     }
 }

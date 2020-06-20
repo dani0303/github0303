@@ -6,14 +6,19 @@
              mc:Ignorable="d"
              x:Class="github0303.MainPage">
 
-    <ContentPage.BindingContext>
+    <d:ContentPage.BindingContext>
         <local:MainViewModel/>
+    </d:ContentPage.BindingContext>
+
+    <ContentPage.BindingContext>
+        <local:MainViewModel2_0/>
     </ContentPage.BindingContext>
 
     <StackLayout>
         <!-- Place new controls here -->
         <Entry Text="{Binding Name}" Placeholder="Enter Name"/>
-        <Label Text="{Binding DisplayName}"/>
+
+        <Entry Text="{Binding Email}" Placeholder="Enter Email"/>
     </StackLayout>
 
 </ContentPage>
